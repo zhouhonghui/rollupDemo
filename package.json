@@ -4,11 +4,23 @@
   "description": "",
   "main": "borwer.js",
   "dependencies": {
-    "rollup-plugin-json": "^4.0.0"
+    "rollup-plugin-json": "^4.0.0",
+    "prettier": "^1.14.3",
+    "lint-staged": "^8.0.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   },
   "keywords": [],
   "author": "",
