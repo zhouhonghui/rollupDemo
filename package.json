@@ -1,0 +1,16 @@
+{
+  "name": "rollupdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "borwer.js",
+  "dependencies": {
+    "rollup-plugin-json": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
