@@ -10,10 +10,11 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": [
+    "src/*.js": [
       "prettier --write",
       "git add"
     ]
