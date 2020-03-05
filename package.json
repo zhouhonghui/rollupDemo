@@ -5,15 +5,20 @@
   "main": "borwer.js",
   "dependencies": {
     "rollup-plugin-json": "^4.0.0",
-    "prettier": "^1.14.3",
-    "lint-staged": "^8.0.0"
+    "prettier": "^1.14.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "lint-staged": "^8.2.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged",
+    "prettier:check": "prettier -l src/**/*.{js,vue,scss}",
+    "prettier:fix": "prettier --write src/**/*.{js,vue,scss}"
   },
   "lint-staged": {
-    "*.js": [
+    "src/*.js": [
       "prettier --write",
       "git add"
     ]
