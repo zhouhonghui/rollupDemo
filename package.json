@@ -13,7 +13,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "prettier:check": "prettier -l src/**/*.{js,vue,scss}",
+    "prettier:fix": "prettier --write src/**/*.{js,vue,scss}"
   },
   "lint-staged": {
     "src/*.js": [
